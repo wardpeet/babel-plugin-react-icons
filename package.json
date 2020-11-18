@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Modular react-icons builds without the hassle.",
   "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
   "author": "Ward Peeters <ward@coding-tech.com>",
   "license": "MIT",
   "dependencies": {
