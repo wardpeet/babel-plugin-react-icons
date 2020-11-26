@@ -24,6 +24,9 @@
     "microbundle": "^0.12.4",
     "prettier": "^2.1.2"
   },
+  "peerDependencies": {
+    "@react-icons/all-files": "^4.1.0"
+  },
   "scripts": {
     "build": "microbundle -f cjs --target=node --sourcemap=false",
     "test": "jest"

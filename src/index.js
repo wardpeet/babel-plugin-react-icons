@@ -1,5 +1,7 @@
 const { addNamed } = require('@babel/helper-module-imports');
 
+const PACKAGE_NAME = '@react-icons/all-files';
+
 module.exports = function reactIcons() {
   const visitor = {
     ImportDeclaration(path) {
@@ -17,7 +19,7 @@ module.exports = function reactIcons() {
           if (specifier.isImportSpecifier()) {
             const importedName = specifier.node.imported.name;
             const localName = specifier.node.local.name;
-            const newImportPath = `${source}/${importedName}.esm.js`;
+            const newImportPath = `${PACKAGE_NAME}/${importedName}.esm.js`;
 
             if (newImportPath) {
               imports.push({
